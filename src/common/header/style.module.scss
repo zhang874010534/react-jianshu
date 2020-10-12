@@ -1,0 +1,59 @@
+.header {
+  height: 58px;
+  border-bottom: 1px solid #f0f0f0;
+  min-width: 768px;
+  max-width: 1440px;
+  margin: 0 auto;
+  .btn {
+    line-height: 58px;
+  }
+  .write {
+    float: right;
+  }
+  .sign_up {
+    float: right;
+  }
+  .log_in {
+    float: right;
+    color: #969696;
+  }
+}
+.logo {
+  display: block;
+  width: 100px;
+  height: 56px;
+  background: url('../../static/logo.png');
+  background-size: contain;
+  float: left;
+}
+
+.nav {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 17px;
+
+  div {
+    float: left;
+    line-height: 56px;
+  }
+  div:nth-child(n + 2) {
+    margin-left: 40px;
+  }
+  .home {
+    color: #ea6f5a;
+  }
+  .download {
+    color: #333333;
+  }
+  .search {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    width: 240px;
+    height: 38px;
+    border-radius: 19px;
+    padding: 0 40px 0 20px;
+    background-color: #eee;
+  }
+}
