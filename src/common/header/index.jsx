@@ -13,13 +13,13 @@ class Header extends Component {
           {' '}
         </a>
         {/* 注册登录 */}
-        <a href="/write" className={s.write} className={'btn'}>
+        <a href="/write" className={`${s.write} ${s.btn}`}>
           写文章
         </a>
-        <a href="/sign_up" className={s.sign_up}>
+        <a href="/sign_up" className={`${s.sign_up} ${s.btn}`}>
           注册
         </a>
-        <a href="/sign_in" className={s.log_in}>
+        <a href="/sign_in" className={`${s.log_in} ${s.btn}`}>
           登录
         </a>
         {/* 中间首页和瞎子啊 */}
