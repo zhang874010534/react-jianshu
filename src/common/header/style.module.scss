@@ -7,12 +7,30 @@
   .btn {
     line-height: 58px;
     display: inline-block;
+    margin-right: 30px;
   }
   .write {
     float: right;
+    background-color: #ea6f5a;
+    color: #fff;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 9px;
+    border-radius: 22px;
   }
   .sign_up {
     float: right;
+    color: var(--themeColor);
+    border: 1px solid var(--themeColor);
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 9px;
+    border-radius: 22px;
+    margin-right: 15px;
   }
   .log_in {
     float: right;
