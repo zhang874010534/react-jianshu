@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import s from './style.module.scss';
+import { connect } from 'react-redux';
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -14,6 +15,7 @@ class Header extends Component {
         </a>
         {/* 注册登录 */}
         <a href="/write" className={`${s.write} ${s.btn}`}>
+          <span className="iconfont iconyumaobi"></span>
           写文章
         </a>
         <a href="/sign_up" className={`${s.sign_up} ${s.btn}`}>
@@ -22,13 +24,16 @@ class Header extends Component {
         <a href="/sign_in" className={`${s.log_in} ${s.btn}`}>
           登录
         </a>
+        <div className={`${s.btn} ${s.headerFont}`}>
+          <span className="iconfont iconAa"></span>
+        </div>
         {/* 中间首页和瞎子啊 */}
         <div className={s.nav}>
           <div>
             <span className={s.home}>首页</span>
           </div>
           <div className={s.download}>下载App</div>
-          <div>
+          <div style={{ position: 'relative' }}>
             <input
               type="text"
               name=""
@@ -36,6 +41,7 @@ class Header extends Component {
               className={s.search}
               placeholder="搜索"
             />
+            <span className={`iconfont iconfangdajing ${s.fangdajing}`}></span>
           </div>
         </div>
       </div>
@@ -43,4 +49,12 @@ class Header extends Component {
   }
 }
 
-export default Header;
+const mapStateToProps = (state /*, ownProps*/) => {
+  return {
+    counter: state.counter
+  };
+};
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
