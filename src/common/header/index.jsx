@@ -6,6 +6,9 @@ class Header extends Component {
     super(props);
     this.state = {};
   }
+  componentDidMount() {
+    this.props.demo();
+  }
   render() {
     return (
       <div className={s.header}>
@@ -27,7 +30,7 @@ class Header extends Component {
         <div className={`${s.btn} ${s.headerFont}`}>
           <span className="iconfont iconAa"></span>
         </div>
-        {/* 中间首页和瞎子啊 */}
+        {/* 中间首页和下载 */}
         <div className={s.nav}>
           <div>
             <span className={s.home}>首页</span>
@@ -51,10 +54,16 @@ class Header extends Component {
 
 const mapStateToProps = (state /*, ownProps*/) => {
   return {
-    counter: state.counter
+    value: state.headerReducer.get('value')
   };
 };
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = (dispatch) => {
+  return {
+    demo() {
+      dispatch({ type: 'demo' });
+    }
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -1,7 +1,5 @@
-const initialState = {
-  visibilityFilter: VisibilityFilters.SHOW_ALL,
-  todos: []
-};
-export default (state = initialState, action) => {
-  return state;
-};
+import { combineReducers } from 'redux';
+import headerReducer from '../common/header/store/reducer';
+export default combineReducers({
+  headerReducer
+});
