@@ -54,7 +54,7 @@ class Header extends Component {
 
 const mapStateToProps = (state /*, ownProps*/) => {
   return {
-    value: state.headerReducer.get('value')
+    value: state.getIn(['headerReducer', 'value'])
   };
 };
 
