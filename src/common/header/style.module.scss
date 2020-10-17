@@ -54,34 +54,62 @@
   height: 100%;
   margin: 0 auto;
   font-size: 17px;
-
-  div {
+  & > div {
     float: left;
     line-height: 56px;
   }
-  div:nth-child(n + 2) {
+  & > div:nth-child(n + 2) {
     margin-left: 40px;
   }
-  .home {
-    color: #ea6f5a;
-  }
-  .download {
-    color: #333333;
-  }
-  .search {
+}
+.home {
+  color: #ea6f5a;
+}
+.download {
+  color: #333333;
+}
+.search {
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  width: 240px;
+  height: 38px;
+  border-radius: 19px;
+  padding: 0 40px 0 20px;
+  background-color: #eee;
+}
+.fangdajing {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  color: #969696;
+}
+.search_info {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  width: 240px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  .search_header {
+    line-height: normal;
+    margin: 15px 15px 0 15px;
+    display: flex;
+    justify-content: space-between;
     box-sizing: border-box;
-    outline: none;
-    border: none;
-    width: 240px;
-    height: 38px;
-    border-radius: 19px;
-    padding: 0 40px 0 20px;
-    background-color: #eee;
-  }
-  .fangdajing {
-    position: absolute;
-    right: 10px;
-    top: 4px;
     color: #969696;
+    font-size: 15px;
+  }
+  .search_content {
+    font-size: 14px;
+    color: #797979;
+    margin: 15px 0 0 15px;
+    line-height: normal;
+    a {
+      margin: 0 15px 10px 0;
+      display: inline-block;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 0 5px;
+    }
   }
 }

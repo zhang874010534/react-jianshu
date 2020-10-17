@@ -1,12 +1,14 @@
-import { Map } from 'immutable';
+import { fromJS } from 'immutable';
 // 把对象转换成immutable对象
-const initialState = Map({
+const initialState = fromJS({
   value: 'header value'
 });
 export default (state = initialState, action) => {
-  if (action.type === 'demo') {
-    // .set方法会结合以前的state，返回新的对象
-    return state.set('value', 'header change');
+  switch (action.type) {
+    case 'demo':
+      // .set方法会结合以前的state，返回新的对象
+      return state.set('value', 'header change');
+    default:
+      return state;
   }
-  return state;
 };
