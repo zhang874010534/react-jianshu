@@ -13,11 +13,13 @@ class Home extends Component {
   render() {
     return (
       <div className={s.home_wrapper}>
+        {/* 左边 */}
         <div className={s.home_left}>
           <img src={banner} alt="" />
           <Topic></Topic>
           <List></List>
         </div>
+        {/* 右边 */}
         <div className={s.home_right}>
           <Recommend></Recommend>
           <Write></Write>

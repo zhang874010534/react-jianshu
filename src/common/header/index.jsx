@@ -27,7 +27,7 @@ class Header extends Component {
     };
   }
   componentDidMount() {
-    this.props.demo();
+    // this.props.demo();
   }
   componentDidUpdate() {}
   render() {

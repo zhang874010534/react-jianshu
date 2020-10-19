@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import s from '../style.module.scss';
+// import s from '../style.module.scss';
 class Topic extends Component {
   constructor(props) {
     super(props);
