@@ -3,8 +3,6 @@
 import axios from 'axios';
 export const getSearchItem = () => {
   return (dispatch) => {
-    axios.get('/api/demo.json').then((res) => {
-      console.log(res);
-    });
+    axios.get('/api/demo.json').then((res) => {});
   };
 };
