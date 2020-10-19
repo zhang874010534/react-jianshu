@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Header from './common/header';
 import store from './store';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './pages/home';
-import Detail from './pages/detail';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
+import Home from './pages/home/index.jsx';
+import Detail from './pages/detail/index.jsx';
 class App extends Component {
   constructor(props) {
     super(props);
