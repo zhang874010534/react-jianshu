@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/react-jianshu/build/static/css/main.26995515.chunk.css",
-    "main.js": "/react-jianshu/build/static/js/main.45c52a75.chunk.js",
-    "main.js.map": "/react-jianshu/build/static/js/main.45c52a75.chunk.js.map",
-    "runtime-main.js": "/react-jianshu/build/static/js/runtime-main.53e2e753.js",
-    "runtime-main.js.map": "/react-jianshu/build/static/js/runtime-main.53e2e753.js.map",
-    "static/js/2.5e9a4fb9.chunk.js": "/react-jianshu/build/static/js/2.5e9a4fb9.chunk.js",
-    "static/js/2.5e9a4fb9.chunk.js.map": "/react-jianshu/build/static/js/2.5e9a4fb9.chunk.js.map",
-    "index.html": "/react-jianshu/build/index.html",
-    "precache-manifest.446d8671039a7fb0c1600ca03d0fec64.js": "/react-jianshu/build/precache-manifest.446d8671039a7fb0c1600ca03d0fec64.js",
-    "service-worker.js": "/react-jianshu/build/service-worker.js",
-    "static/css/main.26995515.chunk.css.map": "/react-jianshu/build/static/css/main.26995515.chunk.css.map",
-    "static/js/2.5e9a4fb9.chunk.js.LICENSE.txt": "/react-jianshu/build/static/js/2.5e9a4fb9.chunk.js.LICENSE.txt",
-    "static/media/banner.png": "/react-jianshu/build/static/media/banner.ef8cfe66.png",
-    "static/media/iconfont.css": "/react-jianshu/build/static/media/iconfont.af1dd1eb.ttf",
-    "static/media/list_img1.png": "/react-jianshu/build/static/media/list_img1.576e8565.png"
+    "main.css": "./static/css/main.6b86e7bd.chunk.css",
+    "main.js": "./static/js/main.1e8182d3.chunk.js",
+    "main.js.map": "./static/js/main.1e8182d3.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.fdddce96.js",
+    "runtime-main.js.map": "./static/js/runtime-main.fdddce96.js.map",
+    "static/js/2.11dae008.chunk.js": "./static/js/2.11dae008.chunk.js",
+    "static/js/2.11dae008.chunk.js.map": "./static/js/2.11dae008.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.fc4e5c85324dbe487da4313f55337528.js": "./precache-manifest.fc4e5c85324dbe487da4313f55337528.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.6b86e7bd.chunk.css.map": "./static/css/main.6b86e7bd.chunk.css.map",
+    "static/js/2.11dae008.chunk.js.LICENSE.txt": "./static/js/2.11dae008.chunk.js.LICENSE.txt",
+    "static/media/banner.png": "./static/media/banner.ef8cfe66.png",
+    "static/media/iconfont.css": "./static/media/iconfont.af1dd1eb.ttf",
+    "static/media/list_img1.png": "./static/media/list_img1.576e8565.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.53e2e753.js",
-    "static/js/2.5e9a4fb9.chunk.js",
-    "static/css/main.26995515.chunk.css",
-    "static/js/main.45c52a75.chunk.js"
+    "static/js/runtime-main.fdddce96.js",
+    "static/js/2.11dae008.chunk.js",
+    "static/css/main.6b86e7bd.chunk.css",
+    "static/js/main.1e8182d3.chunk.js"
   ]
 }

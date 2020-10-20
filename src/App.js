@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './common/header';
 import store from './store';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import Home from './pages/home/index.jsx';
 import Detail from './pages/detail/index.jsx';
 class App extends Component {
@@ -14,12 +14,12 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Header></Header>
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={Home}></Route>
             <Route exact path="/detail" component={Detail}></Route>
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
     );
   }
