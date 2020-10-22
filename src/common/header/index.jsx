@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import s from './style.module.scss';
 import { connect } from 'react-redux';
 import * as actionCreator from './store/actionCreator';
+import { Link } from 'react-router-dom';
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -34,9 +35,9 @@ class Header extends Component {
     return (
       <div className={s.header}>
         {/* 左边logo */}
-        <a href="/" className={s.logo}>
+        <Link to="/" className={s.logo}>
           {' '}
-        </a>
+        </Link>
         {/* 注册登录 */}
         <a href="/write" className={`${s.write} ${s.btn}`}>
           <span className="iconfont iconyumaobi"></span>
@@ -45,9 +46,9 @@ class Header extends Component {
         <a href="/sign_up" className={`${s.sign_up} ${s.btn}`}>
           注册
         </a>
-        <a href="/sign_in" className={`${s.log_in} ${s.btn}`}>
+        <Link to="/sign_in" className={`${s.log_in} ${s.btn}`}>
           登录
-        </a>
+        </Link>
         <div className={`${s.btn} ${s.headerFont}`}>
           <span className="iconfont iconAa"></span>
         </div>

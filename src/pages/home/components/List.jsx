@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import s from '../style.module.scss';
 import listImg1 from '../images/list_img1.png';
+import { Link } from 'react-router-dom';
 class List extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +31,7 @@ class List extends Component {
   }
   render() {
     return (
-      <div className={s.list_info}>
+      <Link to={'/detail/' + 1} className={s.list_info}>
         {this.state.list.map((item) => {
           return (
             <div className={s.list_item} key={item.id}>
@@ -48,7 +49,7 @@ class List extends Component {
         <div className={s.add_more} onClick={this.addMore}>
           加载更多
         </div>
-      </div>
+      </Link>
     );
   }
   addMore = () => {
