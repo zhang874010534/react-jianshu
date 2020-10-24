@@ -35,9 +35,7 @@ class Header extends Component {
     return (
       <div className={s.header}>
         {/* 左边logo */}
-        <Link to="/" className={s.logo}>
-          {' '}
-        </Link>
+        <Link to="/" className={s.logo}></Link>
         {/* 注册登录 */}
         <a href="/write" className={`${s.write} ${s.btn}`}>
           <span className="iconfont iconyumaobi"></span>
