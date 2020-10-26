@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import s from './style.module.scss';
 import { connect } from 'react-redux';
 import * as actionCreator from './store/actionCreator';
+import * as LoginActionCreator from '../../pages/login/store/actionCreator';
 import { Link } from 'react-router-dom';
 class Header extends Component {
   constructor(props) {
@@ -37,16 +38,20 @@ class Header extends Component {
         {/* 左边logo */}
         <Link to="/" className={s.logo}></Link>
         {/* 注册登录 */}
-        <a href="/write" className={`${s.write} ${s.btn}`}>
+        <Link to="/write" className={`${s.write} ${s.btn}`}>
           <span className="iconfont iconyumaobi"></span>
           写文章
-        </a>
+        </Link>
         <a href="/sign_up" className={`${s.sign_up} ${s.btn}`}>
           注册
         </a>
-        <Link to="/sign_in" className={`${s.log_in} ${s.btn}`}>
-          登录
-        </Link>
+        <div className={`${s.log_in} ${s.btn}`}>
+          {this.props.isLogin ? (
+            <div onClick={this.props.loginOut}>退出</div>
+          ) : (
+            <Link to="/sign_in">登录</Link>
+          )}
+        </div>
         <div className={`${s.btn} ${s.headerFont}`}>
           <span className="iconfont iconAa"></span>
         </div>
@@ -126,17 +131,22 @@ class Header extends Component {
 }
 const mapStateToProps = (state /*, ownProps*/) => {
   return {
-    value: state.getIn(['headerReducer', 'value'])
+    value: state.getIn(['headerReducer', 'value']),
+    isLogin: state.getIn(['loginReducer', 'isLogin'])
   };
 };
 const mapDispatchToProps = (dispatch) => {
   return {
     demo() {
       dispatch(actionCreator.getSearchItem());
-    }
+    },
     // changeSearchInfo(){
     //   dispatch({tpye:'change_search_info'})
     // }
+
+    loginOut() {
+      dispatch(LoginActionCreator.loginOut());
+    }
   };
 };
 
